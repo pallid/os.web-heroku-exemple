@@ -7,4 +7,5 @@ build:
     LOGGING_LEVEL: $LOGGING_LEVEL
 
 run:
-  web: mono /var/osp.net/OneScript.WebHost.exe --urls http://*:$PORT
+  # было web: mono /var/osp.net/OneScript.WebHost.exe --urls http://*:$PORT
+  web: dotnet /var/osp.net/OneScript.WebHost.dll --urls http://*:$PORT
